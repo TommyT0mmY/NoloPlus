@@ -35,9 +35,10 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.jpg" type="image/jpeg">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" media="print" onload="this.media='all'" />
 
     <title>NoloPlus - Noleggio Veicoli e Attrezzature</title>
 
@@ -138,7 +139,7 @@
 
     <main>
         <section class="hero">
-            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1920&q=80" alt="Flotta veicoli NoloPlus" class="hero-background" loading="eager">
+            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1920&q=80" alt="Flotta veicoli NoloPlus" class="hero-background" loading="lazy" fetchpriority="low" decoding="async">
             <div class="hero-content">
                 <h1>Il Tuo Partner per il Noleggio Professionale</h1>
                 <p>Soluzioni di noleggio su misura per privati e aziende.</p>
